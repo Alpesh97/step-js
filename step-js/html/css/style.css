@@ -1,0 +1,546 @@
+@import "custom.css";
+@import "custom1.css";
+/*
+    Common 
+    */
+#step-content-block.wizard, .tabcontrol {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+#step-content-block.wizard a, .tabcontrol a {
+  outline: 0;
+}
+
+#step-content-block.wizard ul, .tabcontrol ul {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+#step-content-block.wizard ul > li, .tabcontrol ul > li {
+  display: block;
+  padding: 0;
+}
+
+#step-content-block.wizard ul {
+  display: flex;
+}
+
+/* Accessibility */
+#step-content-block.wizard > .steps .current-info, .tabcontrol > .steps .current-info {
+  position: absolute;
+  left: -999em;
+}
+
+#step-content-block.wizard > .content > .title, .tabcontrol > .content > .title {
+  position: absolute;
+  left: -999em;
+}
+
+/*
+    Wizard
+    */
+#step-content-block.wizard > .steps {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+#step-content-block.wizard.vertical > .steps {
+  width: 100%;
+}
+
+#step-content-block.wizard > .steps .number {
+  font-size: 1.429em;
+}
+
+#step-content-block.wizard > .steps > ul > li {
+  width: 25%;
+}
+
+#step-content-block.wizard > .steps > ul > li, #step-content-block.wizard > .actions > ul > li {
+  float: left;
+}
+
+#step-content-block.wizard.vertical > .steps > ul > li {
+  float: none;
+  width: 100%;
+}
+
+#step-content-block.wizard > .steps a, #step-content-block.wizard > .steps a:hover, #step-content-block.wizard > .steps a:active {
+  display: block;
+  width: auto;
+  margin: 0 0.5em 0.5em;
+  padding: 1em 1em;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#step-content-block.wizard > .steps .disabled a, #step-content-block.wizard > .steps .disabled a:hover, #step-content-block.wizard > .steps .disabled a:active {
+  background: #eee;
+  color: #aaa;
+  cursor: default;
+}
+
+#step-content-block.wizard > .steps .current a, #step-content-block.wizard > .steps .current a:hover, #step-content-block.wizard > .steps .current a:active {
+  background: #2184be;
+  color: #fff;
+  cursor: default;
+}
+
+#step-content-block.wizard > .steps .done a, #step-content-block.wizard > .steps .done a:hover, #step-content-block.wizard > .steps .done a:active {
+  background: #9dc8e2;
+  color: #fff;
+}
+
+#step-content-block.wizard > .steps .error a, #step-content-block.wizard > .steps .error a:hover, #step-content-block.wizard > .steps .error a:active {
+  background: #ff3111;
+  color: #fff;
+}
+
+#step-content-block.wizard > .content {
+  display: block;
+  margin: 0;
+  min-height: 90em;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  transition: min-height 0.3s; 
+}
+
+#step-content-block.wizard.vertical > .content {
+  display: inline;
+  float: left;
+  margin: 0 2.5% 0.5em 2.5%;
+  width: 65%;
+}
+
+#step-content-block.wizard > .content > .body {
+  float: left;
+  position: absolute;
+  width: 100%;
+  
+  padding: 2.5%;
+}
+
+#step-content-block.wizard > .content > .body ul {
+  /*list-style: disc !important;*/
+}
+
+#step-content-block.wizard > .content > .body ul > li {
+  /*display: list-item;*/
+}
+
+#step-content-block.wizard > .content > .body > iframe {
+  border: 0 none;
+  width: 100%;
+  height: 100%;
+}
+
+#step-content-block.wizard > .content > .body input {
+  display: block;
+  /*border: 1px solid #ccc;*/
+}
+
+#step-content-block.wizard > .content > .body input[type="checkbox"] {
+  display: inline-block;
+}
+
+#step-content-block.wizard > .content > .body input.error {
+  background: rgb(251, 227, 228);
+  border: 1px solid #fbc2c4;
+  color: #8a1f11;
+}
+
+#step-content-block.wizard > .content > .body label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+#step-content-block.wizard > .content > .body label.error {
+  color: #8a1f11;
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
+#step-content-block.wizard > .actions {
+  position: relative;
+  display: block;
+  text-align: right;
+  width: 100%;
+}
+
+#step-content-block.wizard.vertical > .actions {
+  display: inline;
+  float: right;
+  margin: 0 2.5%;
+  width: 95%;
+}
+
+#step-content-block.wizard > .actions > ul {
+  display: inline-block;
+  text-align: right;
+}
+
+#step-content-block.wizard > .actions > ul > li {
+  margin: 0 0.8em;
+}
+
+#step-content-block.wizard.vertical > .actions > ul > li {
+  margin: 0 0 0 1em;
+}
+
+#step-content-block.wizard > .actions a, #step-content-block.wizard > .actions a:hover, #step-content-block.wizard > .actions a:active {
+  background: #2184be;
+  color: #fff;
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#step-content-block.wizard > .actions .disabled a, #step-content-block.wizard > .actions .disabled a:hover, #step-content-block.wizard > .actions .disabled a:active {
+  background: #eee;
+  color: #aaa;
+}
+
+#step-content-block.wizard > .loading {
+}
+
+#step-content-block.wizard > .loading .spinner {
+}
+
+/*
+    Tabcontrol
+    */
+.tabcontrol > .steps {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.tabcontrol > .steps > ul {
+  position: relative;
+  margin: 6px 0 0 0;
+  top: 1px;
+  z-index: 1;
+}
+
+.tabcontrol > .steps > ul > li {
+  float: left;
+  margin: 5px 2px 0 0;
+  padding: 1px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tabcontrol > .steps > ul > li:hover {
+  background: #edecec;
+  border: 1px solid #bbb;
+  padding: 0;
+}
+
+.tabcontrol > .steps > ul > li.current {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-bottom: 0 none;
+  padding: 0 0 1px 0;
+  margin-top: 0;
+}
+
+.tabcontrol > .steps > ul > li > a {
+  color: #5f5f5f;
+  display: inline-block;
+  border: 0 none;
+  margin: 0;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li > a:hover {
+  text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li.current > a {
+  padding: 15px 30px 10px 30px;
+}
+
+.tabcontrol > .content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 35em;
+  overflow: hidden;
+  border-top: 1px solid #bbb;
+  padding-top: 20px;
+}
+
+.tabcontrol > .content > .body {
+  float: left;
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  padding: 2.5%;
+}
+
+.tabcontrol > .content > .body ul {
+  list-style: disc !important;
+}
+
+.tabcontrol > .content > .body ul > li {
+  display: list-item;
+}
+
+#step-content-block.wizard > .steps {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  z-index: -999;
+}
+.custom-steps-block-wrapper .getting-started-block .mobile-image{
+  display: none;
+}
+.custom-steps-block-wrapper .getting-started-block .getting-started-content-block .get-started-form .custom-input .form-control {
+    border-color: #000;
+    width: 100%;
+    margin: 0 0 18px;
+    height: 60px;
+}
+.custom-input .form-control:focus{
+  box-shadow: none;
+}
+.custom-input .form-control::placeholder{
+  color: #000;
+  font-size: 0.813rem;
+  line-height: 28px;
+  padding: 0;
+  opacity: 1;
+  text-align: left;
+}
+.custom-input .form-control {
+    color: #000;
+    font-size: 0.813rem;
+    line-height: 1.2;
+    border: 1px solid #000;
+    padding: 10px 15px 10px 20px;
+    height: 52px;
+    line-height: 54px;
+}
+.custom-steps-block-wrapper .getting-started-block .getting-started-content-block .getting-started-content-inner-block{
+  background-color: #fff;
+  padding: 40px;
+}
+.custom-steps-block-wrapper .getting-started-block .getting-started-content-block{
+  max-width: 562px;
+  padding: 12px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url('../images/border-strip.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.custom-steps-block-wrapper .getting-started-block .getting-started-image-block{
+  position: absolute;
+}
+.custom-steps-block-wrapper .getting-started-block .desktop-left{
+  left: -4px;
+  top: -2%;
+  width: 37%;
+  height:auto;
+  z-index:1;
+}
+.custom-steps-block-wrapper .getting-started-block .desktop-right{
+  right:0;
+  top:-2%;
+  width:46%;
+  height:auto;
+  z-index:-1;
+}
+.custom-steps-block-wrapper .getting-started-block .get-started-form .form-group{
+  margin-bottom: 36px;
+}
+.custom-steps-block-wrapper .getting-started-block .get-started-form {
+    max-width: 287px;
+    margin: 33px auto 0;
+}
+.custom-steps-block-wrapper .getting-started-block{
+  position: relative;
+  padding: 50px 0;
+  min-height: 857px;
+  margin:0 0 60px;
+  overflow:hidden;
+}
+.zotos-quiz-section{
+  font-family: "Helvetica Neue", Helvetica, "sans-serif";
+  font-weight: normal;
+  padding: 15px 0 90px;
+}
+.zotos-quiz-section h1 p{
+  font-size: 1.25rem;
+}
+.zotos-quiz-section h1 span{
+  display: block;
+  font-size: 8.563rem;
+  text-transform: initial;
+  font-family: SummerLoving-Regular;
+  line-height: 0.25;
+}
+.result-page-section h1 span,
+.zotos-quiz-section h2 span {
+  display: block;
+  font-size: 6.463rem;
+  text-transform: initial;
+  font-family: SummerLoving-Regular;
+  line-height: 0.35;
+}
+.zotos-quiz-section h1{
+  font-size: 2.438rem;
+  text-transform: uppercase;
+  font-family: HelveticaNeuBdCn;
+  font-weight: normal;
+  margin-bottom: 90px;
+}
+.result-page-section h1,
+.zotos-quiz-section h2{
+  font-size: 2.038rem;
+  text-transform: uppercase;
+  font-family: HelveticaNeuBdCn;
+  font-weight: normal;
+  margin-bottom: 43px;
+}
+.zotos-quiz-section p{
+	max-width:400px;
+	margin:0 auto;
+}
+.submit-btn:hover{
+  background-color: #000;
+  color: #fff;
+}
+.submit-btn:focus{
+	outline:none;
+}
+.submit-btn {
+    border: 2px solid #000;
+    cursor: pointer;
+    color: #000;
+    background-color: transparent;
+    padding: 0 15px;
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+    height: 62px;
+    text-transform: none;
+    line-height: 64px;
+    font-size: 1.375rem;
+    margin: 0 auto;
+    font-family: "Helvetica Neue", Helvetica, "sans-serif";
+    max-height:inherit;
+}
+.custom-progress-bar > span{
+  background-image: url(../images/progress-bar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 66.6667%;
+  height: 100%;
+  transition: width 0.3s;
+}
+.custom-progress-bar {
+    height: 16px;
+    overflow: hidden;
+    width: 560px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 8px;
+    border: solid 0.5px #000000;
+    margin-top: 35px;
+    max-width:100%
+}
+.custom-inner-steps-block{
+  display: none;
+}
+
+@media (max-width:1199px){
+  .custom-steps-block-wrapper .getting-started-block .desktop-left{
+    width: 33%;
+  }
+  .custom-steps-block-wrapper .getting-started-block .desktop-right {
+      width:42%;
+  }
+  .custom-steps-block-wrapper .getting-started-block{
+    min-height:inherit;
+  }
+  .custom-steps-block-wrapper .getting-started-block{
+    margin:0;
+  }
+}
+@media (max-width:991px){
+  .custom-steps-block-wrapper .getting-started-block .desktop-left{
+   display: none;
+  }
+  .custom-steps-block-wrapper .getting-started-block .desktop-right {
+    display: none;
+  }
+  .custom-steps-block-wrapper .getting-started-block .mobile-image{
+    display: block;
+    order:2;
+    margin:-15px 0 0;
+    z-index:1;
+    transform:scale(1.125);
+  }
+  .custom-steps-block-wrapper .getting-started-block{
+    flex-direction: column;
+    display: flex;
+  }
+  .custom-steps-block-wrapper .getting-started-block{
+    padding:40px 0;
+  }
+  .custom-steps-block-wrapper .getting-started-block .getting-started-content-block .getting-started-content-inner-block {
+    padding:40px 40px 60px 40px;
+  }
+}
+@media (max-width:767px){
+  .zotos-quiz-section h1,
+  .zotos-quiz-section h2{
+    font-size:2.125rem;
+  }
+  .zotos-quiz-section h1 span,
+  .zotos-quiz-section h2 span{
+    font-size:7.5rem;
+  }
+  .custom-steps-block-wrapper .getting-started-block .getting-started-content-block .getting-started-content-inner-block{
+    padding:31px 15px;
+  }
+  .zotos-quiz-section p{
+    font-size: 1.25rem;
+  }
+  .zotos-quiz-section p {
+    max-width: 360px;
+  }
+  .custom-steps-block-wrapper .getting-started-block .getting-started-content-block .getting-started-content-inner-block {
+    padding:31px 15px 60px 15px;
+  }
+  .zotos-quiz-section{
+    padding:15px 0 32px;
+  }
+}
+@media (max-width:675px){
+  .custom-steps-block-wrapper .getting-started-block .getting-started-content-block{
+    max-width:100%;
+    margin:0 20px;
+  }
+}

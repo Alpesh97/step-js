@@ -1,0 +1,201 @@
+.step-2 .step-question-wrapper {
+    max-width: 48.125rem;
+    margin: 0 auto;
+}
+.step-2 .custom-checkbox-radio .img-block img{
+  margin: 0;
+  max-width: 14rem;
+  width: 100%;
+}
+#step-content-block.wizard > .content > .body.step-2 label{
+  margin: 0;
+}
+.step-7 .custom-checkbox-radio,
+.step-3 .custom-checkbox-radio,
+.step-2 .custom-checkbox-radio{
+  padding: 0;
+}
+.custom-checkbox-radio .img-block,
+.custom-checkbox-radio .checkbox-radio-inner,
+.custom-checkbox-radio{
+  height: 100%;
+}
+.step-7 .custom-checkbox-radio .img-block,
+.step-2 .custom-checkbox-radio .img-block{
+  border: solid 1px #363636;
+  background-color: #ffffff !important;
+  padding: 0.625rem;
+}
+.step-2 .custom-checkbox-radio input:checked ~ .img-block{
+  border-color: #0cd3a9;
+  box-shadow:  0 0 0 2px #0cd3a9;
+}
+.step-2 .custom-checkbox-radio input:checked ~ .img-block label{
+  color: #0cd3a9;
+}
+
+.step-3 .custom-checkbox-radio label{
+  margin-top: 0.638rem;
+}
+.zotos-quiz-section .step-3 .radio-checkbox-listing{
+  margin: 0 -1.25px !important;
+}
+.step-3 .step-question-wrapper {
+    max-width: 41.675rem;
+    margin: 0 auto;
+}
+.zotos-quiz-section .step-3 .radio-checkbox-listing li{
+  padding: 0 1.25rem !important;
+  margin-bottom: 0;
+}
+.step-3 .custom-checkbox-radio input:checked ~ label{
+  color: #71be1d;
+}
+.step-3 .custom-checkbox-radio input:checked ~ .img-block{
+  border-color: #71be1d;
+  box-shadow:  0 0 0 2px #71be1d;
+}
+.step-3 .custom-checkbox-radio .img-block img{
+  margin: 0;
+}
+.step-3 .custom-checkbox-radio input:checked~.img-block{
+  background-color: #fff;
+}
+.step-3 .custom-checkbox-radio .img-block{
+  border: solid 1px #363636;
+  padding: 0;
+}
+
+.step-7 .custom-checkbox-radio input:checked ~ .img-block{
+  border-color: #71be1d;
+  box-shadow:  0 0 0 2px #71be1d;
+}
+.step-7 .custom-checkbox-radio .img-block p{
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+.step-7 .custom-checkbox-radio input:checked ~ .img-block label{
+  color: #71be1d;
+}
+.step-7 .custom-checkbox-radio .img-block{
+  padding: 1.725rem 1.225rem 1.325rem;
+}
+#step-content-block.wizard > .content > .body.step-7 label{
+ margin: 1.663rem 0 0.613rem !important; 
+}
+.step-7 .custom-checkbox-radio .img-block img{
+  max-width: 4.063rem;
+  margin: 0;
+}
+
+.blue-bg{
+  background-color: #c6f6ec !important;
+}
+.light-red-bg{
+  background-color: #ffeaf3 !important;
+}
+.light-green-bg{
+  background-color: #e3ffc4 !important;
+}
+
+/*result-page*/
+.result-block-wrapper .result-block .product-block .product-listing li .black-btn:hover{
+  background-color: #000;
+  color: #fff !important;
+}
+.result-block-wrapper .result-block .product-block .product-listing li img {
+    /*width: 84%;
+    margin-left: 2.188rem;*/
+}
+.result-block-wrapper .result-block .product-block .product-listing li .black-btn {
+    border: 2px solid #000;
+    width: 7.375rem;
+    background-color: #fff;
+    color: #000;
+    height: 2.625rem;
+    padding: 0 0.625rem;
+    text-align: center;
+    line-height: 2.625rem;
+    font-family: "Helvetica Neue", Helvetica, "sans-serif";
+    font-size: 1.063rem;
+    letter-spacing: 0.18px;
+    text-transform: none;
+    text-decoration: none;
+    border-radius: 0;
+}
+.result-block-wrapper .result-block .product-block .product-listing li p {
+    font-size: 1.438rem;
+    font-family: "HelveticaNeuBdCn";
+    line-height: 0.91;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+.result-block-wrapper .result-block .product-block .product-listing li {
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+    padding: 0 3.125rem;
+}
+.result-block-wrapper .result-block .product-block .product-listing {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    margin: 0 -3.125rem;
+    align-items: flex-end;
+}
+.result-block-wrapper .result-block .product-block {
+    max-width: 70%;
+    flex: 0 0 70%;
+    padding-left: 3.125rem;
+}
+.result-block-wrapper .result-block .content-block {
+    max-width: 30%;
+    flex: 0 0 30%;
+    padding-top: 3.125rem;
+}
+.result-block-wrapper .result-block .content-block {
+    max-width: 30%;
+    flex: 0 0 30%;
+    padding-top: 1.825rem;
+}
+.result-block-wrapper .result-block {
+    padding: 3.125rem;
+    display: flex;
+}
+.result-page-section .title-block {
+    max-width: 52.813rem;
+    margin: 0 auto 3.113rem;
+}
+.result-page-section .title-block .sub-title-block {
+    text-align: center;
+}
+.result-page-section .title-block .sub-title-block p {
+    max-width: 34.375rem;
+    margin: 0 auto;
+}
+.result-page-section .container {
+    max-width: 70.65rem;
+}
+.result-page-section {
+    padding: 0.85rem 0 2.813rem;
+}
+.result-page-section .title-block h1 {
+    margin-bottom: 4rem;
+}
+.result-page-section .title-block .sub-title-block h2{
+  margin-bottom: 0.188rem;
+}
+
+/*media*/
+@media(max-width: 767px){
+  .zotos-quiz-section .step-3 .radio-checkbox-listing li{
+    margin-bottom: 1.563rem;  
+  }
+  #step-content-block.wizard .step-7 ul,
+  #step-content-block.wizard .step-3 ul,
+  #step-content-block.wizard .step-2 ul{
+    justify-content: center;
+  }
+  .step-7 .custom-checkbox-radio .img-block p {
+      font-size: 1.125rem;
+  }
+}

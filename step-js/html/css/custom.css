@@ -1,0 +1,340 @@
+ .zotos-quiz-section .custom-inner-steps-block .quiz-step-content-block {
+   background-color: #ffeaf3;
+   padding:3.125rem 0 !important;
+   text-align: center;
+   transition: all 0.5s;
+ }
+
+ .zotos-quiz-section .tooltip-title-block {
+   margin-bottom: 1.25rem;
+   display: inline-block;
+ }
+.result-page-section .result-block-wrapper h3,
+.result-page-section h2,
+.zotos-quiz-section .tooltip-title-block h3 {
+   font-size: 2.438rem;
+   font-family: "HelveticaNeuBdCn";
+   line-height: 1;
+   text-transform: uppercase;
+ }
+ .zotos-quiz-section .custom-inner-steps-block .container {
+   max-width: 860px;
+ }
+ .zotos-quiz-section .tooltip-title-block .tooltip-wrapper {
+   background-color: #fff;
+   padding: 0.85rem 1.4rem;
+   position: relative;
+   display: flex;
+   max-width: 29.25rem;
+   margin: 0 auto;
+   border-radius: 11px;
+   position: relative;
+   transition: all 0.3s;
+   z-index: 1;
+   margin-top: 1.05rem;
+   /* opacity: 0;
+   visibility: hidden; */
+ }
+
+ /* .zotos-quiz-section .tooltip-title-block:hover .tooltip-wrapper {
+   opacity: 1;
+   visibility: visible;
+ } */
+ 
+ .zotos-quiz-section .tooltip-title-block .tooltip-wrapper::after {
+   position: absolute;
+   top: -0.7rem;
+   content: '';
+   left: 2.35rem;
+   height: 2.5rem;
+   width: 2.5rem;
+   transform: rotate(45deg);
+   z-index: -1;
+   background-color: #fff;
+ }
+
+ .zotos-quiz-section .tooltip-title-block .tooltip-wrapper span {
+   font-size: 4.075rem;
+   font-family: SummerLoving-Regular;
+   margin-right: 0.75rem;
+   line-height: 1;
+   margin-top: -0.65rem;
+ }
+
+ .zotos-quiz-section .tooltip-title-block .tooltip-wrapper p {
+   font-size: 1.25rem;
+   color: #000;
+   line-height: 1.4;
+ }
+
+ .zotos-quiz-section .radio-checkbox-listing {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -10px -20px !important;
+ }
+ .zotos-quiz-section .small-width {
+   max-width: 404px;
+   margin: 0 auto;
+ }
+ .zotos-quiz-section .radio-checkbox-listing li {
+   padding: 0 10px !important;
+   margin-bottom: 20px;
+   max-width: 33.33%;
+   flex: 0 0 33.33%;
+ }
+ .zotos-quiz-section .radio-checkbox-listing.two-col{
+   margin:0 -18px -24px !important
+
+ }
+ .zotos-quiz-section .step-8 .radio-checkbox-listing {
+  margin:0 -14px -34px !important
+ }
+ .zotos-quiz-section .step-8 .radio-checkbox-listing li {
+  padding: 0 14px !important;
+  margin-bottom: 34px;
+ }
+ .zotos-quiz-section .radio-checkbox-listing.two-col li {
+  max-width: 50%;
+  flex: 0 0 50%;
+  padding: 0 18px !important;
+  margin-bottom: 25px;
+ } 
+
+ .zotos-quiz-section  .step-8 .small-width {
+   max-width: 604px;
+ }
+
+ .zotos-quiz-section #step-content-block.wizard>.actions {
+   display: flex;
+   justify-content: center;
+   margin-top: 47px;
+ }
+
+ .zotos-quiz-section #step-content-block.wizard>.actions .yellow-btn {
+   border: 0;
+   width: 219px;
+   background-color: #fedc3e;
+   color: #000;
+   height: 60px;
+   padding: 0 20px;
+   text-align: center;
+   line-height: 65px;
+   font-family: "HelveticaNeuBdCn";
+   font-size: 1.394rem;
+   border-radius:0;
+   letter-spacing: 0.22px;
+ }
+ .zotos-quiz-section #step-content-block.wizard>.actions a.disable {
+ 	cursor: default;
+ 	pointer-events: none;
+ 	opacity: 0.6;
+ }
+ .zotos-quiz-section #step-content-block.wizard>.actions .black-btn {
+  border: 2px solid #000;
+  width: 219px;
+  background-color: #fff;
+  color: #000;
+  height: 60px;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 60px;
+  font-family: "HelveticaNeuBdCn";
+  font-size: 1.394rem;
+  letter-spacing: 0.22px;
+  text-transform: none;
+  border-radius:0;
+}
+
+ .zotos-quiz-section #step-content-block.wizard>.actions .yellow-btn:hover, .zotos-quiz-section #step-content-block.wizard>.actions .yellow-btn:focus, .zotos-quiz-section #step-content-block.wizard>.actions .black-btn:hover, .zotos-quiz-section #step-content-block.wizard>.actions .black-btn:focus {
+   background-color: #000;
+   color: #fff !important
+ }
+ 
+ .zotos-quiz-section .light-blue-bg {
+   background-color:#d3eef6 !important
+ }
+  
+
+ /* custom radio checkbox */
+
+ .custom-checkbox-radio label {
+   font-size: 1.25rem;
+   line-height: 1.2;
+   color: #000;
+   font-family: "HelveticaNeuBdCn";
+   text-transform: uppercase;
+   margin-top: 5px;
+   order: 2;
+   transition: all 0.3s;
+   margin-bottom: 0 !important;
+ }
+ 
+
+ .custom-checkbox-radio {
+   position: relative;
+   padding-top: 46px;
+ }
+
+ .custom-checkbox-radio .checkbox-radio-inner {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .custom-checkbox-radio input {
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 5;
+   cursor: pointer;
+   outline: 0;
+ }
+
+ .custom-checkbox-radio .img-block {
+   background-color: #fff;
+   padding: 10px;
+   order: 1;
+   transition: all 0.3s;
+ }
+
+ .custom-checkbox-radio .img-block img {
+   margin-top: -46px;
+ }
+
+ .custom-checkbox-radio input:checked~label {
+   color: #e5007d;
+ }
+
+ .custom-checkbox-radio input:checked~.img-block {
+   background-color: #e5007d;
+ }
+ .custom-checkbox-radio.secondary label{
+    background-color:#fff;
+    height: 60px;
+    line-height: 62px;
+    font-size: 1.25rem;
+    border:1px solid #363636;
+    margin-top: 0;
+    padding:0 5px
+ }
+ .custom-checkbox-radio.secondary {
+   padding-top: 0;
+ }
+ .custom-checkbox-radio.secondary input:checked~label  {
+   background-color:#e5007d;
+   border-color: #e5007d;
+   color: #fff;
+ }
+ .custom-checkbox-radio.secondary.has-text label{
+  line-height: 1.2;
+  padding: 28px 15px;
+  height: 100%;
+
+ }
+ .custom-checkbox-radio.secondary.has-text,.custom-checkbox-radio.secondary.has-text .checkbox-radio-inner {
+   height: 100%;
+ }
+ .custom-checkbox-radio.secondary.has-text label p {
+   margin-top: 12px;
+   font-size: 1.25rem;
+   text-transform: none;
+   font-family: "Helvetica Neue", Helvetica, "sans-serif";
+ }
+ .light-blue-bg .custom-checkbox-radio.secondary input:checked~label  {
+   background-color:#099cc7;
+   border-color: #099cc7;
+   color: #fff;
+ }
+ 
+ .blue-bg .custom-checkbox-radio.secondary input:checked~label  {
+   background-color:#0e9277 ;
+   border-color: #0e9277 ;
+   color: #fff;
+ }
+
+ .custom-progressbar-wrapper {
+   padding: 0 25px;
+ }
+ #step-content-block.wizard .actions ul {
+   display: flex !important;
+   width: 100%;
+   justify-content: center;
+ }
+ /* media */
+ 
+@media(max-width:767px) {
+  .zotos-quiz-section .radio-checkbox-listing li {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .result-page-section .result-block-wrapper h3, .result-page-section h2, .zotos-quiz-section .tooltip-title-block h3 {
+    font-size: 1.8rem;
+  }
+  .zotos-quiz-section .custom-inner-steps-block .quiz-step-content-block {
+    padding:40px 0 !important;
+  }
+  .zotos-quiz-section .tooltip-title-block .tooltip-wrapper p {
+    font-size: 1.05rem;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .zotos-quiz-section .tooltip-title-block .tooltip-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .zotos-quiz-section .tooltip-title-block .tooltip-wrapper span{
+    margin-right: 0;
+    
+  }
+  .zotos-quiz-section #step-content-block.wizard>.actions {
+    margin-top: 30px;
+  }
+  
+  .zotos-quiz-section .step-8 .radio-checkbox-listing li {
+    padding: 0 10px !important;
+    margin-bottom: 20px;
+  }
+  .zotos-quiz-section .step-8 .radio-checkbox-listing {
+    margin: 0 -10px -20px !important;
+  }
+  .zotos-quiz-section .radio-checkbox-listing.two-col li {
+    padding: 0 10px !important;
+    margin-bottom: 20px;
+  }
+  .zotos-quiz-section .radio-checkbox-listing.two-col {
+    margin: 0 -10px -20px !important;
+  }
+  .custom-checkbox-radio.secondary.has-text label {
+    padding: 20px 10px;
+  }
+  .custom-checkbox-radio.secondary.has-text label p {
+    margin-top: 5px;
+  }
+}
+@media(max-width:575px) {
+  .zotos-quiz-section #step-content-block.wizard>.actions .black-btn,.zotos-quiz-section #step-content-block.wizard>.actions .yellow-btn {
+    width: 100%;
+    max-width:100%;
+  }
+  #step-content-block.wizard > .actions > ul > li {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin: 0 !important;
+    padding: 0 10px;
+  }
+  #step-content-block.wizard > .actions > ul  {
+    margin: 0 -10px;
+  }
+ 
+}
+
+@media(max-width:419px) {
+  .zotos-quiz-section .radio-checkbox-listing.two-col li,.zotos-quiz-section .radio-checkbox-listing li {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .zotos-quiz-section .step-8 .radio-checkbox-listing li {
+    margin-bottom: 20px;
+  }
+}
